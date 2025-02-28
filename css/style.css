@@ -9,9 +9,84 @@ html{
   flex-direction: column;
   min-height: 100%;
 }
+
+.header{
+  margin-bottom: 180px;
+}
 .main{
   flex: 1;
 }
+
+/* HERO */
+.hero-section{
+margin-bottom: 180px;
+}
+
+.box-hero{
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.blank-horo{
+  max-width: 400px;
+  background-color: var(--bs-indigo);
+  padding: 25px 20px 20px 20px;
+  border-radius: 32px;
+}
+
+.fw-normal{
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.form-taitl{
+text-align: center;
+margin-bottom: 4px;
+}
+
+.box-text{
+  max-width: 400px;
+}
+.horo-form{
+  flex-direction: column;
+  gap: 30px;
+  
+  .form-control{
+   padding: 0;
+    height: 40px;
+    min-height: 40px;
+    border: none;
+    border-radius: 64px;
+  }
+    .btn {
+      max-width: 180px;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+}
+
+/* INFO */
+.box-info{
+  display: flex;
+  justify-content: flex-end;
+}
+.info-box-text{
+  max-width: 500px;
+  flex-direction: column;
+}
+
 .footer{
   padding-bottom: 0 !important;
+}
+
+@media(max-width: 998px){
+.box-hero{
+  flex-direction: column;
+}
+
+.box-info{
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
 }
