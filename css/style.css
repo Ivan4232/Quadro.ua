@@ -4,22 +4,20 @@ html{
     margin: 0;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
 .header{
-  margin-bottom: 180px;
+ 
 }
 .main{
   flex: 1;
 }
 
 /* HERO */
-.hero-section{
-margin-bottom: 180px;
+
+.headline-wrap{
+  max-width: 400px;
+}
+/* .hero-section{
+
 }
 
 .box-hero{
@@ -67,7 +65,7 @@ margin-bottom: 4px;
 }
 
 /* INFO */
-.box-info{
+/* .box-info{
   display: flex;
   justify-content: flex-end;
 }
@@ -98,4 +96,4 @@ margin-bottom: 4px;
   flex-direction: column;
   flex-direction: column-reverse;
 }
-}
+} */
