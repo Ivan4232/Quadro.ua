@@ -98,6 +98,6 @@ margin-bottom: 4px;
 }
 } */
 
-/* .stages-item::nth-child(2){
+ .stages-item:nth-child(2){
  flex-direction: row-reverse;
-} */
+}
