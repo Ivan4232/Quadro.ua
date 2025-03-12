@@ -75,7 +75,13 @@ h1,
 }
 
 .header{
- 
+
+}
+
+.logo{
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 10px;
 }
 .main{
   flex: 1;
