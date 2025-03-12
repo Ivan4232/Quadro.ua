@@ -83,6 +83,10 @@ h1,
   font-family: var(--bs-heading-font);
 }
 
+a {
+  color: #fff;
+}
+
 .header{
 
 }
@@ -187,6 +191,19 @@ margin-bottom: 4px;
  flex-direction: row-reverse;
 }
 
+
+/* Modal */
+.modal-content {
+  background-color: #fff;
+  color: #000;
+
+  form {
+    input {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
 .modal-header .btn-close {
   backdrop-filter: invert(100%);
 }
