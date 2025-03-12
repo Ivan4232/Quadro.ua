@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quadro.ua</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    
   </head>
   <body>
     <div class="wrapper d-flex flex-column h-100">
@@ -18,7 +16,9 @@
         <!-- Nav -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
           <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand"> 
+              <img class="logo" width="60" height="60" src="images/logo.png" alt="">
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -36,102 +36,75 @@
             >
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
+                  <a class="nav-link"  href="#hero-section"
+                    >Про нас</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sec 1</a>
+                  <a class="nav-link" href="#features-section">Переваги</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sec 2</a>
+                  <a class="nav-link" href="#services-section">Послуги</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sec 3</a>
+                  <a class="nav-link" href="#steps-section">Процедура ремонту</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sec 4</a>
+                  <a class="nav-link" href="#development-section">Власне виробництво</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sec 5</a>
+                  <a class="nav-link" href="#trusted-section">Нам довіряють</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#footer">footer</a>
+                  <a class="nav-link" href="#footer-section">Контакти</a>
                 </li>
               </ul>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Soc link 1</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Soc link 2</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Soc link 3</a>
-                </li>
-              </ul>
+
             </div>
           </div>
         </nav>
         <!-- Nav -->
       </header>
       <main class="main">
-        <section class="hero-section py-5">
+
+        <section class="hero-section py-5" id="hero-section">
           <div class="container">
             <div class="row justify-content-evenly">
               <!-- Col -->
-              <div class="col-md-6 col-lg-6 d-flex justify-content-lg-end">
+              <div class="col-md-6 d-flex flex-column align-items-center text-center">
+                <img class="img-fluid" src="./images/logo.png" width="300" height="300" alt="">
+                <h1 class="h1"> 
+                  Phoenix <br>
+                  Шпиталь дронів 
+                </h1>
+              </div>
+              <div class="col-md-6">
                 <div class="headline-wrap">
-                  <h1 class="h1">Lorem ipsum dolor sit amet consectetur</h1>
+                 
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Placeat velit non sunt cumque dolor voluptates? Repellat
-                    dolorem modi delectus et voluptatibus perspiciatis dolores
-                    sit iusto, quaerat voluptas provident ad laborum.
+                    Спеціалізований сервісний центр — ваш надійний партнер у ремонті та обслуговуванні дронів DJI.
+                    Ми проводимо професійну діагностику, ремонтуємо апаратну та програмну частину обладнання за допомогою оригінальних запчастин, 
+                    що забезпечує високу надійність після ремонту. Наші техніки використовують сучасні технології для точної та швидкої діагностики, 
+                    а також для вирішення будь-яких несправностей 
                   </p>
+                  <p>
+                    Наш досвід говорить сам за себе – понад 5000 успішних ремонтів дронів та іншого спеціалізованого обладнання. 
+                    Ми гарантуємо якість, адже кожен пристрій повертається до роботи завдяки нашим знанням і професіоналізму.
+                  </p>
+                  <ul>
+                    <li>3+ Роки на ринку</li>
+                    <li>5000+  Ремонтів </li>
+                    <li>3 Власних інженерних розробки </li>
+                  </ul>
+                  <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#contactFormModal">Зв'язатися з нами</button>
                 </div>
               </div>
-              <!-- Col -->
-              <div class="col-md-6 col-lg-4">
-                <form class="horo-form d-flex flex-column">
-                  <h3 class="h3 mb-3 fw-normal">
-                    Розрахувати вартість ремонту
-                  </h3>
-                  <div class="form-floating">
-                    <p class="form-taitl">Ім'я*</p>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingTel"
-                      placeholder="Ім'я"
-                    />
-                  </div>
-                  <div class="form-floating">
-                    <p class="form-taitl">Контактний номер телефону*</p>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="floatingTel"
-                      placeholder="Телефон"
-                    />
-                  </div>
-                  <div class="form-floating">
-                    <p class="form-taitl">Контактний номер телефону*</p>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="name@example.com"
-                    />
-                  </div>
-                  <button class="btn btn-primary w-100 py-2" type="submit">
-                    Войти
-                  </button>
-                </form>
-              </div>
+
             </div>
           </div>
         </section>
+
+
         <section class="info-section py-5">
           <div class="container">
             <div class="row">
@@ -140,7 +113,7 @@
                   width="400"
                   height="400"
                   class="img-fluid d-block m-auto mb-4"
-                  src="https://placehold.co/400"
+                  src="images/drone-1.png"
                   alt=""
                 />
               </div>
@@ -167,13 +140,13 @@
             </div>
           </div>
         </section>
-        <section class="statistics">
+        <section class="statistics py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <h1 class="statistics-title">
+                <h2 class="statistics-title">
                   Lorem ipsum dolor sit, amet consectetur
-                </h1>
+                </h2>
                 <p class="statistics-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Repellat officia deleniti, eum eaque architecto temporibus est
@@ -185,13 +158,234 @@
               <div class="col-md-6">
                 <img width="400" height="200" class="img-fluid d-block m-auto mb-4" src="https://placehold.co/400" alt="" />
               </div>
-              <div class="col-12">
-               <ul class="list d-flex">
+              <div class="">
+               <ul class="list d-flex justify-content-center">
                 <li class="d-flex flex-column"><span>8</span><span>Років досвіду</span></li>
                 <li class="d-flex flex-column"><span>10+</span><span>Сертифікованих інженерів</span></li>
                 <li class="d-flex flex-column"><span>10400+</span><span>Виконаних ремонтів</span></li>
                 <li class="d-flex flex-column"><span>25+</span><span>компаній-партнерів</span></li>
                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="analytics-section py-5">
+          <div class="container">
+            <div class="analytics-box row">
+              <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="analytics-title">
+                  <h2 class="h2">Cтруктура звернень до QUADRO.Service</h2>
+                  <p>Згідно статистики, основними причинами звернень є:</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="analytics-card">
+                  <ul class="analytics-list">
+                    <li class="analytics-item"><p>​Невідповідне зберігання/транспортування</p><span></span><p>5%</p></li>
+                    <li class="analytics-item">
+                      <p>Дефекти конструкції</p><span></span><p>3%</p>
+                    </li>
+                    <li class="analytics-item"><p>Проблеми з ПЗ</p><span></span><p>2%</p>
+                    </li>
+                    <li class="analytics-item"><p>“Диви як умію”</p><span></span><p>90%</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="equipment-section py-5">
+          <div class="container">
+            <div class="equipment-box-1 row py-5">
+              <div class="col-md-7">
+                <p>Активна виносна антена для дронів</p>
+                <h2 class="h2">Комплекс "Трембіта"</h2>
+                <p>"Трембіта" - це високоефективна активна виносна антена, розроблена спеціально для розширення можливостей управління
+                дронами. Цей комплекс може використовуватись як з дронами DJI, так і з дронами Autel, забезпечуючи стабільний сигнал та
+                безперебійну роботу на великих відстанях завдяки технології 2.4GHz.</p>
+                <button>Придбати</button>
+                <button>Детальніше</button>
+              </div>
+              <div class="col-md-5 d-flex justify-content-center">
+                <img src="https://placehold.co/200x450" alt="">
+              </div>
+            </div>
+            <div class="equipment-box-2 row">
+              <div class="col-md-7">
+                  <p>Система подовження для FPV дронів</p>
+                  <h2 class="h2">Система "Шланг"</h2>
+                  <p>Система "Шланг" була створена для додаткової безпеки FPV пілота під час керування FPV дронами, без компромісів в якості
+                    сигналу. Ми дослухалися до рекомендацій військових FPV пілотів і перевіряли все на практиці, залучивши досвідчених FPV
+                    пілотів до команди розробки.</p>
+                <button>Придбати</button>
+                <button>Детальніше</button>
+              </div>
+              <div class="col-md-5 d-flex justify-content-center">
+                <img src="https://placehold.co/200x450" alt="">
+              </div>
+            </div>
+            </div>
+        </section>
+        <section class="repair-section py-5">
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+              <ul class="repair-list d-flex justify-content-center flex-wrap">
+                <li><img src="https://placehold.co/200x130" alt=""><h3>DJI CONSUMER</h3><p>Mavic 2/3, Air 2/2S, Mini/2/3</p></li>
+                <li><img src="https://placehold.co/200x130" alt=""><h3>DJI AGRICULTURE</h3><p>DJI Agras: T16, T20, T30, T10</p></li>
+                <li><img src="https://placehold.co/200x130" alt=""><h3>СТАБІЛІЗАТОРИ</h3><p>Ronin, Osmo, OM</p></li>
+                <li><img src="https://placehold.co/200x130" alt=""><h3>DJI EDUCATION</h3><p>Robomaster, Tello</p></li>
+                <li><img src="https://placehold.co/200x130" alt=""><h3>ЗАРЯДНІ СТАНЦІЇ</h3><p>Bluetti, Jackery</p></li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+              <button>Придбати</button>
+              <button>Детальніше</button>
+              <button>Придбати</button>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+              <button>Детальніше</button>
+              <button>Детальніше</button>
+            </div>
+            <p class="d-flex justify-content-center">* техніка що придбана в національній мережі магазинів або в компанії QUADRO.ua</p>
+          </div>
+        </section>
+        <section class="service-section py-5">
+          <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-and">
+              <h2 class="h2 text-end">Перелік основних послуг</h2>
+              <ul>
+                <li><p class="text-end">Консультація інженера як особисто так і дистанційно</p></li>
+                <li><p class="text-end">Діагностика пошкодженого пристрою</p></li>
+                <li><p class="text-end">Проведення ремонту на платній основ</p></li>
+                <li><p class="text-end">Проведення гарантійного обслуговування техніки</p></li>
+                <li><p class="text-end">Сезонне обслуговування техніки</p></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2 class="h2">Перелік основних послуг</h2>
+              <ul>
+                <li>
+                  <p>Консультація інженера як особисто так і дистанційно</p>
+                </li>
+                <li>
+                  <p>Діагностика пошкодженого пристрою</p>
+                </li>
+                <li>
+                  <p>Проведення ремонту на платній основ</p>
+                </li>
+                <li>
+                  <p>Проведення гарантійного обслуговування техніки</p>
+                </li>
+                <li>
+                  <p>Сезонне обслуговування техніки</p>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="stages-section py-5">
+          <div class="container-fluid">
+            <ul class="stages-list d-flex flex-column">
+              <li class="stages-item d-flex"><div><span>1</span><div class="stages-text"><h3>Звернення клієнта</h3><p>Консультація з інженером</p></div></div></li>
+              <li class="stages-item d-flex"><div><span>2</span><div class="stages-text"><h3>Передача в ремонт</h3><p>За допомогою відправлення Новою Поштою чи особисто на рецепції сервісу</p></div></div></li>
+              <li class="stages-item d-flex"><span>3</span>
+                <div class="stages-text">
+                  <h3>Створення документації</h3>
+                  <p>Під час прийому техніки створюється акт прийому</p>
+                </div>
+              </li>
+              <li class="stages-item d-flex"><span>4</span>
+                <div class="stages-text">
+                  <h3>Діагностика</h3>
+                  <p>Пошук несправностей та попередня оцінка ремонту</p>
+                </div>
+              </li>
+              <li class="stages-item d-flex"><span>5</span>
+                <div class="stages-text">
+                  <h3>Узгодження ремонту</h3>
+                  <p>Узгодження попередньої вартості та термінів виконня ремонту з клієнтом</p>
+                </div>
+              </li>
+              <li class="stages-item d-flex"><span>6</span>
+                <div class="stages-text">
+                  <h3>Ремонт техніки</h3>
+                  <p>Інженер приступає до ремонту техніки</p>
+                </div>
+              </li>
+              <li class="stages-item d-flex"><span>7</span>
+                <div class="stages-text">
+                  <h3>Тестування техніки</h3>
+                  <p>Інженер що виконував ремонт проводить тестування техніки на працездатність</p>
+                </div>
+              </li>
+              <li class="stages-item d-flex"><span>8</span>
+                <div class="stages-text">
+                  <h3>Отримання техніки клієнтом</h3>
+                  <p>За допомогою відправлення Новою Поштою чи особисто на рецепції сервісу</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="modification-section py-5">
+          <div class="container">
+          <div class="modification-box row">
+            <div class="col-md-7 align-content-center ">
+              <h2 class="h2">Послуга переробки пультів коптера для виносних антен</h2>
+              <p>Ми спеціалізуємось на переробці пультів дистанційного керування для дронів, щоб забезпечити надзвичайно потужний та
+                стабільний зв'язок з вашим апаратом. Наші послуги включають в себе монтаж роз'ємів для антен та кабелів, які підвищують
+                можливості вашого обладнання.</p>
+                <button>Детальніше</button>
+              </div>
+              <div class="col-md-5">
+                <img src="https://placehold.co/350x250" alt="">
+                <img src="https://placehold.co/350x250" alt="">
+              </div>
+          </div>
+          </div>
+        </section>
+        <section class="banner-section py-5">
+          <div class="container">
+            <div class="banner-box text-center">
+              <img src="https://placehold.co/400x100" alt="">
+              <p>ремонтуємо натхненно, стильно, якісно, старанно</p>
+            </div>
+          </div>
+        </section>
+        <section class="end-section">
+          <div class="container">
+            <div class="end-box row">
+              <div class="col-md-4">
+                <h3>Контакти</h3>
+                <p>​м. Київ, вул. Нижньоключова 14, офіс 1-2</p>
+                <p>Тел: 067 704-24-58; 067 474-52-97; 067 474-52-95</p>
+                <p>Agriculture відділ: 097 316 30 91</p>
+                <p>Enterprise відділ: 097 316 46 02</p>
+                <p>Power відділ: 067 315 50 01</p>
+              </div>
+              <div class="col-md-4">
+                <h3>Нова Пошта</h3>
+                <p>Інформація для відправлення техніки в ремонт:</p>
+                <p>м. Київ, вулиця Нижньоключова, 14, офіс 12</p>
+                <p>Семенюта Олександр</p>
+                <p>+380 67 474-52-98</p>
+              </div>
+              <div class="col-md-4">
+                <h3>Графік роботи</h3>
+                <p>Понеділок – П’ятниця — 10:00-19:00</p>
+                <p>Субота – Неділя — 11:00-18:00</p>
+              </div>
+              <div class="col-md-12 text-center">
+                <a href="#">Ремонт дронів для ЗСУ</a>
+                <a href="#">Переробка пультів</a>
+                <a href="#">Виносна антена "Трембіта"</a>
+                <a href="#">Скид на Mavic 3</a>
+                <a href="#">Магазин QUADRO.ua</a>
               </div>
             </div>
           </div>
@@ -206,11 +400,75 @@
         <p class="text-center text-body-secondary">© 2024 Компания, ООО</p>
       </footer>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactFormModal" aria-hidden="true">
+      <div class="modal-dialog p-5">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5" id="exampleModalLabel"> Розрахувати вартість ремонту</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="form" id="contactForm">
+              <div class="form-floating mb-3">
+                <label class="form-label">Ім'я*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Ім'я"
+                />
+              </div>
+              <div class="form-floating mb-3">
+                <label class="form-label">Контактний номер телефону*</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="tel"
+                  placeholder="Телефон"
+                />
+              </div>
+              <div class="form-floating mb-3">
+                <label class="form-label">Email*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  required=""
+                />
+              </div>
+              <button class="btn btn-primary w-100 py-2" type="submit">
+                Надіслати
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer flex-column">
+            <ul class="d-flex justify-content-center list-unstyled">
+              <li>
+                <a class="soc-link" href="#"><i class="bi bi-threads-fill"></i></a>
+              </li>
+              <li>
+                <a class="soc-link" href="#"><i class="bi bi-threads-fill"></i></a>
+              </li>
+              <li>
+                <a class="soc-link" href="#"><i class="bi bi-threads-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- End: Modal -->
     <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/style.js" ></script>
   </body>
 </html>

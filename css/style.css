@@ -1,11 +1,100 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v47-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v29-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root{
+  --bs-orange: #ff4500;
+  --bs-font-sans-serif: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --bs-heading-font: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --bs-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 69, 0, 1) 0%, rgba(255, 56, 48, 1) 100%);
+  --bs-body-color: #E0E0E0; /* white */
+  --bs-heading-color: #ff3830; /* white */
+  --bs-body-bg: #000;
+}
+
+.btn-primary{
+  --bs-btn-bg: var(--bs-orange);
+  --bs-btn-border-color: var(--bs-heading-color);
+    transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
+    box-shadow: 0 5px 15px var(--bs-orange);
+  }
+}
+
+
+
 body,
 html{
   height: 100%;
     margin: 0;
 }
 
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+  font-family: var(--bs-heading-font);
+}
+
+a {
+  color: #fff;
+}
+
 .header{
- 
+
+}
+
+.logo{
+  max-width: 100%;
+  object-fit: contain;
+  margin-right: 10px;
 }
 .main{
   flex: 1;
@@ -97,3 +186,24 @@ margin-bottom: 4px;
   flex-direction: column-reverse;
 }
 } */
+
+ .stages-item:nth-child(2){
+ flex-direction: row-reverse;
+}
+
+
+/* Modal */
+.modal-content {
+  background-color: #fff;
+  color: #000;
+
+  form {
+    input {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+.modal-header .btn-close {
+  backdrop-filter: invert(100%);
+}
