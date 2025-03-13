@@ -201,9 +201,18 @@ margin-bottom: 4px;
     input {
       background-color: #fff;
       color: #000;
+      &:focus {
+        background-color: #fff;
+        color: #000;
+      }
     }
   }
 }
 .modal-header .btn-close {
   backdrop-filter: invert(100%);
+}
+
+.form-floating > label{
+  font-size: 14px;
+  padding: 5px;
 }

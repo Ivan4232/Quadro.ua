@@ -410,6 +410,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+            <!-- Form start -->
             <form class="form" id="contactForm">
               <div class="form-floating mb-3">
                 <label class="form-label">Ім'я*</label>
@@ -418,6 +419,7 @@
                   class="form-control"
                   id="name"
                   placeholder="Ім'я"
+                  required
                 />
               </div>
               <div class="form-floating mb-3">
@@ -427,6 +429,7 @@
                   class="form-control"
                   id="tel"
                   placeholder="Телефон"
+                  required
                 />
               </div>
               <div class="form-floating mb-3">
@@ -436,13 +439,15 @@
                   class="form-control"
                   id="email"
                   placeholder="name@example.com"
-                  required=""
+                  required
                 />
               </div>
               <button class="btn btn-primary w-100 py-2" type="submit">
                 Надіслати
               </button>
+              <div id="result"></div>
             </form>
+             <!-- Form end -->
           </div>
           <div class="modal-footer flex-column">
             <ul class="d-flex justify-content-center list-unstyled">
@@ -469,6 +474,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/style.js" ></script>
+    <script src="js/main.js" ></script>
   </body>
 </html>
