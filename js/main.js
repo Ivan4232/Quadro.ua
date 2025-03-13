@@ -15,8 +15,8 @@ const formElement = document.querySelector('#contactForm');
 formElement.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const token = '7866098146:AAEDIp8LSOq7wAtDixR8-nMh48j_TOTzIfU'; 
-  const chatId = '463699299'; 
+  const token = '322'; 
+  const chatId = '234234'; 
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
   const nameValue = formElement.querySelector('#name').value;
