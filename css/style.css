@@ -74,6 +74,10 @@ h1,
   font-family: var(--bs-heading-font);
 }
 
+ul {
+  list-style: none;
+}
+
 .header{
 
 }
