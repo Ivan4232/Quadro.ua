@@ -33,7 +33,16 @@
 .btn-primary{
   --bs-btn-bg: var(--bs-orange);
   --bs-btn-border-color: var(--bs-heading-color);
+    transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
+    box-shadow: 0 5px 15px var(--bs-orange);
+  }
 }
+
+
 
 body,
 html{
@@ -76,6 +85,9 @@ h1,
 
 ul {
   list-style: none;
+a {
+  color: #fff;
+}
 }
 
 .header{
@@ -83,8 +95,8 @@ ul {
 }
 
 .logo{
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 100%;
+  object-fit: contain;
   margin-right: 10px;
 }
 .main{
@@ -180,4 +192,21 @@ margin-bottom: 4px;
 
  .stages-item:nth-child(2){
  flex-direction: row-reverse;
+}
+
+
+/* Modal */
+.modal-content {
+  background-color: #fff;
+  color: #000;
+
+  form {
+    input {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+.modal-header .btn-close {
+  backdrop-filter: invert(100%);
 }
