@@ -85,6 +85,7 @@ h1,
 
 ul {
   list-style: none;
+  padding-left: 0 !important;
 }
 a {
     color: #fff;
@@ -189,6 +190,12 @@ margin-bottom: 4px;
   flex-direction: column-reverse;
 }
 } */
+
+.analytics-section{
+  span{
+    font-weight: 700;
+  }
+}
 
  .stages-item:nth-child(2){
  flex-direction: row-reverse;
