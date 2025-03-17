@@ -54,11 +54,11 @@ formElement.addEventListener('submit', async (e) => {
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const loader = document.querySelector('.loader');
-
+  const loadedDelay = 0;
   setTimeout(() => {
     loader.classList.add('d-none');
     initAOS();
-  }, 1000);
+  }, loadedDelay);
 
   function initAOS() {
     // AOS
