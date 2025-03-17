@@ -236,6 +236,26 @@ a {
   }
 }
 
+/*=============================================
+=            Services            =
+=============================================*/
+
+
+.services-card{
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px 0 1px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+
+  span{
+    font-weight: 700;
+  }
+}
+
+.services-btn{
+  background: inherit;
+  border: none;
+}
 
 /*=============================================
 =            Trusted            =
