@@ -116,6 +116,9 @@ a {
   }
 }
 
+.row {
+  --bs-gutter-y: 0.75rem;
+}
 
 /*=============================================
 =            Custom Styles            =
@@ -242,14 +245,16 @@ a {
 
 
 .card{
-  background: rgba(255, 255, 255, 0.1);
-  padding: 16px 0 1px;
+  background: rgba(var(--bs-white-rgb), 0.1);
   border-radius: 16px;
-  margin-bottom: 20px;
 
   span{
     font-weight: 700;
   }
+}
+
+.card-list li::marker{
+  color: var(--bs-orange)
 }
 
 /*=============================================
