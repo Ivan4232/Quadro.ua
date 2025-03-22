@@ -116,6 +116,10 @@ a {
   }
 }
 
+span {
+  font-weight: 700;
+}
+
 .row {
   --bs-gutter-y: 0.75rem;
 }
@@ -247,15 +251,31 @@ a {
 .card{
   background: rgba(var(--bs-white-rgb), 0.1);
   border-radius: 16px;
-
-  span{
-    font-weight: 700;
-  }
 }
 
 .card-list li::marker{
   color: var(--bs-orange)
 }
+
+.types-work ul{
+list-style: none;
+}
+
+.types-work-item {
+  background: rgba(var(--bs-white-rgb), 0.1);
+  border-radius: 8px;
+  padding: 15px 20px 15px 96px;
+}
+
+/*=============================================
+=            Types-work             =
+=============================================*/
+
+
+
+
+
+
 
 
 /*=============================================
