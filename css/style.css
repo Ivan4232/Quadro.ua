@@ -374,13 +374,6 @@ span{
   color: var(--bs-orange);
 }
 
-@media(min-width: 1200px){
-.development-section{
-  .justify-content-center{
-    justify-content: start!important;
-  }
-}
-}
 
 @media (max-width: 991.98px) {
   .development-section{
