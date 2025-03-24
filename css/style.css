@@ -51,6 +51,10 @@ li::marker{
   --bs-modal-width: 750px;
 }
 
+.modal-width-800 {
+  --bs-modal-width: 800px;
+}
+
 .btn-primary{
   --bs-btn-bg: var(--bs-orange);
   --bs-btn-border-color: var(--bs-heading-color);
@@ -366,6 +370,10 @@ span{
 }
 }
 
+.development-list li::marker {
+  color: var(--bs-orange);
+}
+
 @media(min-width: 1200px){
 .development-section{
   .justify-content-center{
@@ -382,6 +390,9 @@ span{
   }
 }
 
+.system-BPLA{
+  
+}
 
 /*=============================================
 =            Trusted            =
