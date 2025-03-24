@@ -34,6 +34,11 @@
   --bs-body-bg: #000;
 }
 
+li::marker{
+  color: var(--bs-orange)
+}
+
+
 .max-width-320 {
   max-width: 320px;
 }
@@ -58,6 +63,7 @@
     background-color: var(--bs-orange);
     border-color: var(--bs-orange);
     box-shadow: 0 10px 25px var(--bs-orange);
+    text-decoration: none;
   }
 }
 
@@ -137,6 +143,11 @@ img{
 =            Custom Styles            =
 =============================================*/
 
+
+.header {
+  background-color:var(--bs-body-color);
+}
+
 .main{
   flex: 1;
 }
@@ -155,37 +166,68 @@ img{
 /*=============================================
 =            Modal, Form            =
 =============================================*/
+.form-modal {
 
-.modal-content {
-  background-color: #000;
-  color: #fff;
+  .modal-content {
 
-  form {
-    input {
-      background-color: #fff;
-      color: #000;
-      &:focus {
-        background-color: #fff;
-        color: #000;
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+    border: 1px solid var(--bs-body-color);
+    border-radius: 16px;
+
+    .modal-header {
+      border-bottom: 0;
+    }
+
+    form {
+      input {
+        background-color: var(--bs-body-color);
+        color: var(--bs-body-bg);
+        border-color: var(--bs-body-bg);
+        &:focus {
+          background-color: var(--bs-body-color);
+          color: var(--bs-body-bg);
+        }
       }
     }
+
+    a {
+      color: var(--bs-body-bg);
+    }
+
   }
+
 }
+
+
+
 .modal-header .btn-close {
   backdrop-filter: invert(100%);
   background-color: #fff;
 }
 
-.modal-footer {
-  a {
-    color: var(--bs-orange);
-  }
-}
-
 .form-floating > label{
   font-size: 14px;
   padding: 5px;
-  color: #000;
+  color: var(--bs-body-bg);
+}
+
+.details-modal {
+
+
+  .modal-content {
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+    border: 1px solid var(--bs-body-color);
+    border-radius: 16px;
+  }
+
+  .btn-close {
+    background-color: #fff;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
 }
 
 
@@ -236,7 +278,7 @@ img{
   background: rgba(255, 255, 255, 0.1);
   color: gray;
   backdrop-filter: blur(10px);
-  border-radius: 15px;
+  border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   align-items:center;
   padding: 1rem 6rem 1rem 1rem;
@@ -279,9 +321,6 @@ img{
   }
 }
 
-.card-list li::marker{
-  color: var(--bs-orange)
-}
 
 
 /*=============================================
@@ -389,7 +428,7 @@ span{
 =            Navbar            =
 =============================================*/
 .navbar {
-  background-color: #ccc !important;
+  background-color: var(--bs-body-color) !important;
 }
 
 .navbar-brand {
