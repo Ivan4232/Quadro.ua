@@ -32,6 +32,8 @@
   --bs-body-color: #E0E0E0; /* white */
   --bs-heading-color: #ff3830; /* white */
   --bs-body-bg: #000;
+  --bs-body-font-size: 1.2rem;
+  --bs-nav-link-font-size: 1rem;
 }
 
 li::marker{
@@ -55,11 +57,16 @@ li::marker{
   --bs-modal-width: 800px;
 }
 
+.btn{
+  --bs-btn-font-size: 1.5rem;
+}
+
 .btn-primary{
   --bs-btn-bg: var(--bs-orange);
   --bs-btn-border-color: var(--bs-heading-color);
     transition: all 0.2s ease-in-out;
     background: var(--bs-gradient);
+    min-width: 200px;
 
   &:hover,
   &:active,
@@ -133,6 +140,11 @@ a {
 img{
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(5px 5px 5px #666);
+}
+
+p{
+  text-align: justify;
 }
 
 .span-font-w {
@@ -140,8 +152,12 @@ img{
 }
 
  .row {
-  --bs-gutter-y: 0.75rem;
+  --bs-gutter-y: 1.5rem;
 } 
+
+.no-marker::marker{
+ color: transparent;
+}
 
 /*=============================================
 =            Custom Styles            =
@@ -161,9 +177,10 @@ img{
 }
 
 .hero-section {
-  > .row {
-    --bs-gutter-y: 1.5rem;
-  }
+    .btn{
+      min-width: 320px;
+      margin: 0 auto;
+    }
 }
 
 
@@ -174,9 +191,9 @@ img{
 
   .modal-content {
 
-    background-color: var(--bs-body-color);
-    color: var(--bs-body-bg);
-    border: 1px solid var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    color:  var(--bs-body-color);
+    border: 1px solid var(--bs-orange);
     border-radius: 16px;
 
     .modal-header {
@@ -194,13 +211,7 @@ img{
         }
       }
     }
-
-    a {
-      color: var(--bs-body-bg);
-    }
-
   }
-
 }
 
 
@@ -220,9 +231,8 @@ img{
 
 
   .modal-content {
-    background-color: var(--bs-body-color);
-    color: var(--bs-body-bg);
-    border: 1px solid var(--bs-body-color);
+    color: var(--bs-body-color);
+    border: 1px solid var(--bs-orange);
     border-radius: 16px;
   }
 
@@ -262,12 +272,6 @@ img{
 =            Features            =
 =============================================*/
 
-.features-section{
-  .row {
-    --bs-gutter-y: 1.5rem;
-  }
-}
-
 .features-list {
   font-size: 120%;
   i {
@@ -285,14 +289,8 @@ img{
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   align-items:center;
-  padding: 1rem 6rem 1rem 1rem;
-
-  .bi {
-    position: absolute;
-    font-size: var(--icon-size);
-    top: 1rem;
-    right: 1rem;
-  }
+  padding: 1rem ;
+  gap: 1rem;
 
   p {
     margin: 0;
@@ -325,21 +323,29 @@ img{
   }
 }
 
+.card-title{
+ font-size: 2rem;
+}
 
+.card-list{
+  padding-left: 4rem;
+}
 
 /*=============================================
 =            Types-work             =
 =============================================*/
 
+.types-work-section{
+  font-size: 1.8rem;
+  i {
+    color: var(--bs-orange)
+  }
+}
+
 .types-work-item {
   background: rgba(var(--bs-white-rgb), 0.1);
   border-radius: 8px;
   padding: 15px 20px 15px 20px;
-}
-.types-work-section{
-  i {
-    color: var(--bs-orange)
-  }
 }
 
 .steps-list li::marker{
