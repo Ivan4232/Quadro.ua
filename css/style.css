@@ -37,6 +37,7 @@
   --bs-nav-link-font-size: 1rem;
   --offset: 1.5rem;
   --radius: 16px;
+  --filter-effect: 5px 5px 5px var(--shadow-color);
 }
 
 .row {
@@ -249,7 +250,7 @@ img{
   img {
     aspect-ratio: 1/1;
     max-width: 100%;
-    filter: drop-shadow(5px 5px 5px var(--shadow-color));
+    filter: drop-shadow(var(--filter-effect));;
     max-width: 375px;
     margin: 0 auto;
     display: block;
@@ -399,7 +400,7 @@ img{
   }
 
   img {
-    filter: drop-shadow(5px 5px 5px var(--shadow-color));
+    filter: drop-shadow(var(--filter-effect));;
     aspect-ratio: 1/1;
   }
 }
@@ -501,6 +502,21 @@ img{
 }
 
 
+/*=============================================
+=            Swiper Slider            =
+=============================================*/
 
+.slider-swiper {
 
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    aspect-ratio: 1/1;
+    filter: drop-shadow(var(--filter-effect));;
+  }
+}
 
