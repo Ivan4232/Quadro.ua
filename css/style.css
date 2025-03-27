@@ -23,17 +23,24 @@
 /*=============================================
 =            Variables            =
 =============================================*/
-/*  #FF4500 → #FF3B30 */
 :root{
   --bs-orange: #ff4500;
   --bs-font-sans-serif: "Roboto", "Helvetica Neue", Arial, sans-serif;
   --bs-heading-font: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   --bs-gradient: linear-gradient(90deg, rgba(254, 151, 39, 1) 0%, rgba(205, 43, 37, 1) 57%, rgba(153, 12, 10, 1) 100%);
-  --bs-body-color: #E0E0E0; /* white */
-  --bs-heading-color: #ff3830; /* white */
+  --bs-body-color: #fff;
+  --bs-heading-color: #ff3830;
   --bs-body-bg: #000;
+  --shadow-color: #666;
+  --shadow-border: 0 4px 10px var(--shadow-color);
   --bs-body-font-size: 1.2rem;
   --bs-nav-link-font-size: 1rem;
+  --offset: 1.5rem;
+  --radius: 16px;
+}
+
+.row {
+  --bs-gutter-y: var(--offset);
 }
 
 li::marker{
@@ -58,7 +65,7 @@ li::marker{
 }
 
 .btn{
-  --bs-btn-font-size: 1.5rem;
+  --bs-btn-font-size: var(--offset);
 }
 
 .btn-primary{
@@ -66,7 +73,7 @@ li::marker{
   --bs-btn-border-color: var(--bs-heading-color);
     transition: all 0.2s ease-in-out;
     background: var(--bs-gradient);
-    min-width: 200px;
+    min-width: 160px;
 
   &:hover,
   &:active,
@@ -130,7 +137,7 @@ h1,
 }
 
 a {
-  color: #fff;
+  color: var(--bs-body-color);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -140,20 +147,12 @@ a {
 img{
   max-width: 100%;
   height: auto;
-  filter: drop-shadow(5px 5px 5px #666);
-}
-
-p{
-  text-align: justify;
+  object-fit: contain;
 }
 
 .span-font-w {
   font-weight: 700;
 }
-
- .row {
-  --bs-gutter-y: 1.5rem;
-} 
 
 .no-marker::marker{
  color: transparent;
@@ -181,6 +180,10 @@ p{
       min-width: 320px;
       margin: 0 auto;
     }
+
+    p {
+      text-align: justify;
+    }
 }
 
 
@@ -194,7 +197,7 @@ p{
     background-color: var(--bs-body-bg);
     color:  var(--bs-body-color);
     border: 1px solid var(--bs-orange);
-    border-radius: 16px;
+    border-radius: var(--radius);
 
     .modal-header {
       border-bottom: 0;
@@ -218,7 +221,7 @@ p{
 
 .modal-header .btn-close {
   backdrop-filter: invert(100%);
-  background-color: #fff;
+  background-color: var(--bs-body-color);
 }
 
 .form-floating > label{
@@ -233,14 +236,23 @@ p{
   .modal-content {
     color: var(--bs-body-color);
     border: 1px solid var(--bs-orange);
-    border-radius: 16px;
+    border-radius: var(--radius);
   }
 
   .btn-close {
-    background-color: #fff;
+    background-color: var(--bs-body-color);
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: var(--offset);
+    top: var(--offset);
+  }
+
+  img {
+    aspect-ratio: 1/1;
+    max-width: 100%;
+    filter: drop-shadow(5px 5px 5px var(--shadow-color));
+    max-width: 375px;
+    margin: 0 auto;
+    display: block;
   }
 }
 
@@ -273,24 +285,29 @@ p{
 =============================================*/
 
 .features-list {
+  --bs-gutter-y: calc(var(--offset) / 2);
+
   font-size: 120%;
+  margin-bottom: 0;
+
   i {
-    color: var(--bs-orange)
+    color: var(--bs-orange);
+    background: var(--bs-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
 .features-card{
   --icon-size: 4rem;
 
-  position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  color: gray;
+  height: 100%;
+  background: rgba(var(--bs-white-rgb), 0.2);
+  color: var(--bs-body-color);
   backdrop-filter: blur(10px);
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  align-items:center;
-  padding: 1rem ;
-  gap: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-border);
+  padding: var(--offset);
 
   p {
     margin: 0;
@@ -303,6 +320,7 @@ p{
 
 .services-section .card{
   height: 100%;
+  box-shadow: var(--shadow-border)
 }
 
 .card-body{
@@ -316,7 +334,7 @@ p{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 16px;
+  border-radius: var(--radius);
 
   .btn-primary{
     margin-top: auto;
@@ -338,14 +356,20 @@ p{
 .types-work-section{
   font-size: 1.8rem;
   i {
-    color: var(--bs-orange)
+    color: var(--bs-orange);
+    background: var(--bs-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
+
 .types-work-item {
   background: rgba(var(--bs-white-rgb), 0.1);
-  border-radius: 8px;
-  padding: 15px 20px 15px 20px;
+  border-radius: calc(var(--radius) / 2);
+  padding: calc(var(--offset) / 2);
+  line-height: 1.1;
+  flex-grow: 1;
 }
 
 .steps-list li::marker{
@@ -370,15 +394,20 @@ p{
 
 
 .development-section{
+  span{
+    font-weight: 700;
+  }
 
-span{
- font-weight: 700;
-}
+  img {
+    filter: drop-shadow(5px 5px 5px var(--shadow-color));
+    aspect-ratio: 1/1;
+  }
 }
 
 .development-list li::marker {
   color: var(--bs-orange);
 }
+
 
 
 @media (max-width: 991.98px) {
@@ -397,7 +426,6 @@ span{
 =            Trusted            =
 =============================================*/
 .trusted-docs {
-  --bs-gutter-y: 1.5rem;
   img {
     max-width: 280px;
     display: block;
@@ -444,6 +472,8 @@ span{
 .navbar-brand {
   color: var(--bs-navbar-color);
   font-size: var(--bs-body-font-size);
+  font-family: var(--bs-heading-font);
+  font-size:  65%;
 
   &:hover {
     text-decoration: none;
@@ -451,9 +481,15 @@ span{
   }
 }
 
+
+
 @media (min-width: 1200px) {
   .navbar {
-    background-color: #fff !important;
+    background-color: var(--bs-body-color) !important;
+  }
+
+  .navbar-brand {
+    font-size: initial;
   }
 }
 
