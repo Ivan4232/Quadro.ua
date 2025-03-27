@@ -54,7 +54,7 @@ formElement.addEventListener('submit', async (e) => {
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const loader = document.querySelector('.loader');
-  const loadedDelay = 0;
+  const loadedDelay = 1000;
   setTimeout(() => {
     loader.classList.add('d-none');
     initAOS();
@@ -86,4 +86,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     }
   }
+
+  if(window.Swiper) {
+    new Swiper(".slider-swiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
+
+
 });
