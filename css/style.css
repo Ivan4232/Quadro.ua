@@ -38,6 +38,7 @@
   --offset: 1.5rem;
   --radius: 16px;
   --filter-effect: 5px 5px 5px var(--shadow-color);
+  --swiper-theme-color: #ff4500;
 }
 
 .row {
@@ -411,10 +412,6 @@ img{
       margin: 0!important;
     }
   }
-}
-
-.system-BPLA{
-  
 }
 
 /*=============================================
