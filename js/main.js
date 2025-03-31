@@ -88,12 +88,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   if(window.Swiper) {
-    new Swiper(".slider-swiper", {
+    // Slider 1
+    const sliderOptions = {
       slidesPerView: 4,
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 3500,
+        delay: 10000,
         disableOnInteraction: false,
       },
       loop: true,
@@ -110,7 +111,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
           spaceBetween: 30,
         },
       },
-    });
+      speed: 1000,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    };
+    
+     // Slider 1
+    const slider1 = new Swiper(".slider-swiper", sliderOptions);
+
+    // Slider 2
+    const slider2 = new Swiper(".trusted-slider", sliderOptions);
   }
 
 
