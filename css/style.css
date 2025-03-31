@@ -38,6 +38,7 @@
   --offset: 1.5rem;
   --radius: 16px;
   --filter-effect: 5px 5px 5px var(--shadow-color);
+  --swiper-theme-color: #ff4500;
 }
 
 .row {
@@ -382,12 +383,6 @@ img{
 }
 
 
-/*=============================================
-=            Types-work             =
-=============================================*/
-
-
-
 
 /*=============================================
 =            Development            =
@@ -419,10 +414,24 @@ img{
   }
 }
 
-.system-BPLA{
-  
+/*=============================================
+=            Steps-section             =
+=============================================*/
+
+.steps-section{
+  p{
+    text-align: justify;
+  }
 }
 
+@media (max-width: 1200px) {
+  .steps-section {
+    .row>* {
+     padding-right: calc(var(--bs-gutter-x)* 1);
+     padding-left: calc(var(--bs-gutter-x)* 1);
+    }
+ }
+}
 /*=============================================
 =            Trusted            =
 =============================================*/
