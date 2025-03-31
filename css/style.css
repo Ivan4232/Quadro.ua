@@ -152,6 +152,7 @@ img{
   object-fit: contain;
 }
 
+/*  fw-bold  in bootstrap */
 .span-font-w {
   font-weight: 700;
 }
@@ -292,11 +293,10 @@ img{
   font-size: 120%;
   margin-bottom: 0;
 
-  i {
-    color: var(--bs-orange);
-    background: var(--bs-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+  img {
+    display: inline-block;
+    margin-right: 5px;
   }
 }
 
@@ -304,7 +304,7 @@ img{
   --icon-size: 4rem;
 
   height: 100%;
-  background: rgba(var(--bs-white-rgb), 0.2);
+  background: rgba(var(--bs-white-rgb), 0.1);
   color: var(--bs-body-color);
   backdrop-filter: blur(10px);
   border-radius: var(--radius);
@@ -344,7 +344,11 @@ img{
 }
 
 .card-title{
- font-size: 2rem;
+ font-size: 1.8rem;
+ color: #fff;
+ background: none;
+ -webkit-background-clip: #fff;
+ -webkit-text-fill-color: #fff;
 }
 
 .card-list{
@@ -356,12 +360,15 @@ img{
 =============================================*/
 
 .types-work-section{
-  font-size: 1.8rem;
   i {
     color: var(--bs-orange);
     background: var(--bs-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .row {
+    --bs-gutter-y: 0;
   }
 }
 
@@ -372,6 +379,11 @@ img{
   padding: calc(var(--offset) / 2);
   line-height: 1.1;
   flex-grow: 1;
+
+  img {
+    display: inline-block;
+    margin-right: 5px;
+  }
 }
 
 .steps-list li::marker{
@@ -418,20 +430,6 @@ img{
 =            Steps-section             =
 =============================================*/
 
-.steps-section{
-  p{
-    text-align: justify;
-  }
-}
-
-@media (max-width: 1200px) {
-  .steps-section {
-    .row>* {
-     padding-right: calc(var(--bs-gutter-x)* 1);
-     padding-left: calc(var(--bs-gutter-x)* 1);
-    }
- }
-}
 /*=============================================
 =            Trusted            =
 =============================================*/
@@ -527,5 +525,9 @@ img{
     aspect-ratio: 1/1;
     filter: drop-shadow(var(--filter-effect));;
   }
+}
+
+.swiper-wrapper {
+  transition: transform 1s ease;
 }
 
