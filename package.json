@@ -1,7 +1,6 @@
 {
   "name": "quadro.ua",
   "version": "1.0.0",
-  "main": "gulpfile.babel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,12 +8,12 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "gulp": "5.0.0",
-    "gulp-image": "6.3.1",
-    "gulp-imagemin": "9.1.0",
-    "imagemin-mozjpeg": "10.0.0",
-    "imagemin-optipng": "8.0.0",
-    "imagemin-svgo": "11.0.1"
+  "dependencies": {
+    "axios": "1.8.4",
+    "clean-css": "5.3.3",
+    "fs-extra": "11.3.0",
+    "path": "0.12.7",
+    "terser": "5.39.0",
+    "tinify": "1.8.0"
   }
 }
