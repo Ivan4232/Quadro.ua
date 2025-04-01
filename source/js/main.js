@@ -1,13 +1,3 @@
-// Modal
-
-const myModal = document.querySelector('#contactFormModal');
-const myInput = document.querySelector('#floatingName');
-
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus();
-});
-
-
 // Form
 
 const formElement = document.querySelector('#contactForm');
@@ -50,7 +40,7 @@ formElement.addEventListener('submit', async (e) => {
 
 });
 
-// Loader 
+// Loader
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const loader = document.querySelector('.loader');
@@ -117,7 +107,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         prevEl: ".swiper-button-prev",
       },
     };
-    
+
      // Slider 1
     const slider1 = new Swiper(".slider-swiper", sliderOptions);
 
