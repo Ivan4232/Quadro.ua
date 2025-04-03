@@ -2,9 +2,6 @@
 
 <p> The website of a drone repair company is used to contact them, order parts, etc.<p>
 
-
-![Phoenix Шпиталь дронів](/images/Drone.jpg)
-
 ## ✨ Особливості
 - ✅ Ремонт дронів
 - 🔧 Запчастини під замовлення
