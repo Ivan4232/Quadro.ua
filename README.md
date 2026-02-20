@@ -3,7 +3,7 @@
 Website for a drone repair company that allows users to contact engineers, order spare parts, and request repairs.
 
 ## 🌐 Live Demo
-[Phoenix Drone Repair Website](aerophoenix.netlify.app)
+[Phoenix Drone Repair Website](https://aerophoenix.netlify.app)
 
 ## ✨ Features
 - Drone repair services
@@ -21,5 +21,5 @@ Website for a drone repair company that allows users to contact engineers, order
 2. Open index.html in browser
 
 ## 👨‍💻 Authors
-- **Maksim Petrischak** – [GitHub профіль](https://github.com/PetrischakMaxim)
-- **Ivan Breidla** – [GitHub профіль](https://github.com/Ivan4232)
+- Maksim Petrischak – [GitHub профіль](https://github.com/PetrischakMaxim)
+- Ivan Breidla – [GitHub профіль](https://github.com/Ivan4232)
