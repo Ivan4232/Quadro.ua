@@ -1,18 +1,25 @@
-# Phoenix Шпиталь дронів
+# Phoenix Drone Repair Website
 
-<p> The website of a drone repair company is used to contact them, order parts, etc.<p>
+Website for a drone repair company that allows users to contact engineers, order spare parts, and request repairs.
 
-## ✨ Особливості
-- ✅ Ремонт дронів
-- 🔧 Запчастини під замовлення
-- 📞 Онлайн-зв'язок з інженерами
-  
-## 🛠 Технології
+## 🌐 Live Demo
+[Phoenix Drone Repair Website](https://aerophoenix.netlify.app)
 
-- HTML, CSS, JavaScript
+## ✨ Features
+- Drone repair services
+- Spare parts ordering
+- Online contact with engineers
+
+## 🛠 Technologies
+- HTML
+- CSS
+- JavaScript
 - Bootstrap
 
-## 👤 Автори
+## 🚀 How to run
+1. Clone repository
+2. Open index.html in browser
 
-- **Maksim Petrischak** – [GitHub профіль](https://github.com/PetrischakMaxim)
-- **Ivan Breidla** – [GitHub профіль](https://github.com/Ivan4232)
+## 👨‍💻 Authors
+- Maksim Petrischak – [GitHub профіль](https://github.com/PetrischakMaxim)
+- Ivan Breidla – [GitHub профіль](https://github.com/Ivan4232)
