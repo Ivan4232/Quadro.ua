@@ -16,10 +16,10 @@ Website for a drone repair company that allows users to contact engineers, order
 - JavaScript
 - Bootstrap
 
-## 🚀 How to run
-1. Clone repository
-2. Open index.html in browser
+## Libraries
 
-## 👨‍💻 Authors
-- Maksim Petrischak – [GitHub профіль](https://github.com/PetrischakMaxim)
+- **AOS** — used for scroll animations in testimonials and hero section
+- **Swiper** — used for testimonials slider
+- 
+## 👨‍💻 Author
 - Ivan Breidla – [GitHub профіль](https://github.com/Ivan4232)
