@@ -20,6 +20,6 @@ Website for a drone repair company that allows users to contact engineers, order
 
 - **AOS** — used for scroll animations in testimonials and hero section
 - **Swiper** — used for testimonials slider
-- 
+
 ## 👨‍💻 Author
 - Ivan Breidla – [GitHub профіль](https://github.com/Ivan4232)
